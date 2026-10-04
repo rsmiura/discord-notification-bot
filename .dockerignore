@@ -1,0 +1,11 @@
+# Only application files are sent to the build context.
+**
+!Dockerfile
+!requirements.txt
+!bot.py
+!commands.py
+!config.py
+!notifications.py
+!state.py
+!monitors/
+!monitors/*.py
