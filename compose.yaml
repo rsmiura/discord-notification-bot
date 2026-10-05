@@ -1,0 +1,16 @@
+name: discord-notification-bot
+
+services:
+  bot:
+    build: .
+    container_name: discord-bot
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /data
+    restart: unless-stopped
+    volumes:
+      - bot-data:/data
+
+volumes:
+  bot-data:
